@@ -1,0 +1,33 @@
+{
+  "name": "javel-prisma-adapter",
+  "version": "0.0.1",
+  "description": "Standalone lifecycle adapters for popular JS/TS ORMs",
+  "type": "module",
+  "license": "MIT",
+  "author": "Abdou Jammeh",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "javel",
+    "prisma",
+    "orm",
+    "adapter"
+  ],
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
