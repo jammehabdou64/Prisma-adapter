@@ -26,6 +26,15 @@ generator client {
 }
 ```
 
+Create the first migration, then generate the client:
+
+```bash
+bunx prisma migrate dev --name init
+bunx prisma generate
+```
+
+`prisma generate` writes the client to `generated/prisma`.
+
 ### 2. Configure path alias in `tsconfig.json`
 
 Add the generated path alias to `compilerOptions.paths` in `tsconfig.json`:
