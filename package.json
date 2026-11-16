@@ -1,6 +1,6 @@
 {
   "name": "javel-prisma-adapter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Standalone lifecycle adapters for popular JS/TS ORMs",
   "type": "module",
   "license": "MIT",
